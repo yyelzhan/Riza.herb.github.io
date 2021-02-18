@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riza Herb</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="header-menu">
+        <div class="container">
+          <div class="nav__header">
+            <ul class="nav__list">
+              <li>
+                <a class="header__link" data-behaviour="toggle-menu-icon" href="#">
+                  продукция
+                </a>
+              </li>
+              <li>
+                <a class="header__link  " href="about.html">
+                  о компании
+                </a>
+              </li>
+              <li>
+                <a class="header__logo" href="page.html">
+                  <img src="img/rizalogo.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <input type="search" class="search" value="ПОИСК" placeholder="ПОИСК">
+              </li>
+              <div class="dropdown">
+                <a href="basket.html" class="basket">
+                  <div>
+                    <p>товаров</p>
+                  </div>
+                  <div>
+                    <span>0</span>
+                  </div>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- <div class="header-burger">
+        <div class="menu-icon">
+          <span class="menu-icon__bar">
+        </div>
+      </div> -->
+      
+      <nav class="nav" data-element="toggle-nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--plus" data-behaviour="toggle-link-icon" id="" href="#">Здоровье</a>
+            <ul class="nav__sub-list" data-behaviour="toggle-sub-menu">
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Общее здоровье</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#" id="add">Кости и суставы</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Иммунитет</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Здоровый сон</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Антистресс</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Красота</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Нутрициология и фитнес</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Сердце</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Пищеварение и кишечник</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Работа мозга</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Здоровье глаз</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--plusTwo" data-behaviour="toggle-link-iconTwo" href="#">Возраст/пол</a>
+            <ul class="nav__sub-list" data-behaviour="toggle-sub-menuTwo">
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Женское здоровье</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Мужское здоровье</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Детское здоровье</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--plusThree" data-behaviour="toggle-link-iconThree" href="#">Тип продукта</a>
+            <ul class="nav__sub-list" data-behaviour="toggle-sub-menuThree">
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Амино кислоты и протеины</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Травы</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Минералы</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Витамины</a>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__link" href="#">Добавки</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <section class="product">
+        <div class="container">
+          <div class="tabs">
+            <ul class="tabs_choice ">
+                <button class="accordion">здоровье<span class="acc__arrow"></span></button>
+                <div class="panel">
+                <div class="tab_btn"> <input   type="radio"  id="tabs" name="radiobutton"  value="option1" checked data-tab="#tab_1" class="tab_choice active">  <li >Общее здоровье</li></div>
+               <div class="tab_btn" ><input  id="tab" type="radio" name="radiobutton"  value="option1" checked data-tab="#tab_2" class="tab_choice  "> <li>Кости и суставы</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Иммунитет</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Здоровый сон</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Антистресс</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Энегрия</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Красота</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Нутрициология и фитнес</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Сердце</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Пищеварение и кишечник</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Работа мозга</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Здоровье глаз</li></div></div>
+
+
+                
+                <button class="accordion">возраст/пол<span class="acc__arrow"></span></button>
+                <div class="panel">
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Женское здоровье</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Мужское здоровье</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Детское здоровье</li></div></div>
+
+
+
+                <button class="accordion">тип продукта <span class="acc__arrow"></span></button>
+                <div class="panel">
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Амино кислоты и протеины</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Травы</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Минералы</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice">  <li>Витамины</li></div>
+                <div class="tab_btn"><input  type="radio" name="radiobutton" id="" value="option1" checked data-tab="#tab_3" class="tab_choice" >  <li>Добавки</li></div>
+                </div>
+            </ul>
+    
+            <div class="tabs_content active " id="tab_1">
+              <div class="tabs_wrapper ">
+                <div class="tabs_item tabs_item-active">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+          
+              </div>
+              <div class="tabs_wrapper tab_mt ">
+                <div class="tabs_item ">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+          
+              </div>
+              <div class="tabs_wrapper  tab_mt ">
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+                <div class="tabs_item">
+                    <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                    <h3>MILKYMOM (30 каспул)</h3>
+                    <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                    <button class="btn_b2">КУПИТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="tabs_content  " id="tab_2">
+                <div class="tabs_wrapper ">
+                  <div class="tabs_item ">
+                      <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                      <h3>MILKYMOM (30 каспул)</h3>
+                      <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                      <button class="btn_b2">КУПИТЬ</button>
+                  </div>
+                  <div class="tabs_item">
+                      <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                      <h3>MILKYMOM (30 каспул)</h3>
+                      <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                      <button class="btn_b2">КУПИТЬ</button>
+                  </div>
+                  <div class="tabs_item">
+                      <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                      <h3>MILKYMOM (30 каспул)</h3>
+                      <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                      <button class="btn_b2">КУПИТЬ</button>
+                  </div>
+            
+                </div>
+                <div class="tabs_wrapper tab_mt ">
+                  <div class="tabs_item ">
+                      <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                      <h3>MILKYMOM (30 каспул)</h3>
+                      <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                      <button class="btn_b2">КУПИТЬ</button>
+                  </div>
+                  <div class="tabs_item">
+                      <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                      <h3>MILKYMOM (30 каспул)</h3>
+                      <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                      <button class="btn_b2">КУПИТЬ</button>
+                  </div>
+                  <div class="tabs_item">
+                      <div class="b2_img"><img src="img/MockUp (2).png" alt=""></div>
+                      <h3>MILKYMOM (30 каспул)</h3>
+                      <p>Препарат для женщин. Делает так, что все будет хорошо. А потом еще лучше и трататам.</p>
+                      <button class="btn_b2">КУПИТЬ</button>
+                  </div>
+                            </div>
+            
+              </div>
+              
+        
+          </div>
+        </div>
+      </section>
+
+    <section class="b5">
+        <div class="container">
+          <div class="b5_header">
+            <div class="b5_item">
+              <div class="b5_logo"><img src="img/instagram.svg" alt="">
+              </div>
+              <div class="b5_title">
+                <p>подпишитесь на наш аккаунт в instagram,
+                  чтобы следить за нашими новостями</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b5_wrapper">
+          <div class="b5_img">
+            <img src="img/b7png/b7.png" alt="">
+          </div>
+          <div class="b5_img"> <img src="img/b7png/b7.1.png" alt=""></div>
+    
+          <div class="b5_img"><img src="img/b7png/b7.3.png" alt=""></div>
+    
+          <div class="b5_img"><img src="img/b7png/b7.4.png" alt=""></div>
+    
+          <div class="b5_img"><img src="img/b7png/b7.5.png" alt=""></div>
+    
+          <div class="b5_img"><img src="img/b7png/b7.6.png" alt=""></div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer_wrapper">
+            <div class="footer_contact">
+              <p class="footer_title">контакты</p>
+              <div class="footer_social">
+                <div class="insta_Logo"><a href="#"><img src="img/instagram.svg" alt="">
+                    <p>riza.herb</p>
+                  </a></div>
+                <div class="insta_Logo"><a href="#"><img src="img/instagram.svg" alt="">
+                    <p>riza.herb</p>
+                  </a> </div>
+                <div class="insta_Logo"><a href="#"><img src="img/instagram.svg" alt="">
+                    <p>riza.herb</p>
+                  </a></div>
+              </div>
+            </div>
+            <div class="footer_product">
+              <p class="footer_title">продукция</p>
+              <div class="footer_list">
+                <li><a href="#">Общее здоровье</a></li>
+                <li><a href="#">Кости и суставы</a></li>
+                <li><a href="#">Иммунитет</a></li>
+                <li><a href="#">Здоровый сон</a></li>
+                <li><a href="#">Антистресс</a></li>
+                <li><a href="#">Энегрия</a></li>
+                <li><a href="#">Красота</a></li>
+                <li><a href="#">Нутрициология и фитнес</a></li>
+                <li><a href="#">Сердце</a></li>
+                <li><a href="#">Пищеварение и кишечник</a></li>
+                <li><a href="#">Работа мозга</a></li>
+                <li><a href="#">Здоровье глаз</a>
+              </div>
+              </li>
+    
+            </div>
+            <div class="footer_form">
+              <div class="form">
+                <p> <span>Чтобы получить консультацию,</span> <br>
+                  заполните поля ниже</p>
+                <span class="cpa-form-wrapper">
+                  <form method="POST" enctype="application/x-www-form-urlencoded" action="/?referer=&amp;cpa_form=1"
+                    onsubmit="return cpaFormValidation(this)">
+                    <div class="cpa-form-group cpa-form-group-odd cpa-form-group-first cpa-wrapper-field-country">
+                      <label class="cpa-control-label">Страна:</label><select class="cpa-group-field cpa-select-country"
+                        name="country">
+                        <option selected="true" value="kz">Казахстан</option>
+                        <option value="kg">Киргизия</option>
+                      </select>
+                    </div>
+                    <div class="cpa-form-group cpa-form-group-even cpa-wrapper-field-fio"><label
+                        class="cpa-control-label">ФИО:</label><input class="cpa-group-field cpa-input-fio" name="fio"
+                        placeholder="Ваше имя"></div>
+                    <div class="cpa-form-group cpa-form-group-odd cpa-wrapper-field-phone"><label
+                        class="cpa-control-label">Телефон:</label><input class="cpa-group-field cpa-input-phone"
+                        name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <div class="cpa-form-group cpa-form-group-even cpa-wrapper-field-total"><label
+                        class="cpa-control-label cpa-control-total">Итого:</label><span class="cpa-control-amount">6490.00
+                        тнг</span></div>
+                    <div class="cpa-form-group cpa-form-group-odd cpa-form-group-last cpa-wrapper-field-submit">
+                      <button class="cpa-input-submit" type="submit"
+                        onclick="yaCounter45713811.reachGoal('ORDER'); return true;">Получить консультацию</button><input
+                        type="hidden" name="offer" value="laminary_mask"><input type="hidden" name="vendor" value=""><input
+                        type="hidden" name="price" value=""><input type="hidden" name="campaign_default" value="aAcLzqZl">
+                    </div>
+                  </form>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="footer_end">
+            <hr>
+            <div class="footer_logo"><a href="page.html"><img src="img/rizalogo.svg" alt=""></a></div>
+          </div>
+        </div>
+      </footer>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src="js/script.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/index.js"></script>
+    </body>
+    </html>

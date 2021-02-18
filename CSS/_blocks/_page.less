@@ -1,0 +1,215 @@
+// main: ../style.less
+
+.menu-top {
+    margin: 60px 0;
+
+    .menu__list {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+
+        .menu__link {
+            text-decoration: none;
+            color: @black;
+            font-family: "GothamProRegular";
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.page {
+    .intro {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .intro__start {
+            display: flex;
+            width: 50%;
+        }
+
+        .intro__end {
+            width: 50%;
+
+            h2 {
+                font-size: 30px;
+
+                strong {
+                    font-family: "GothamProBold";
+                    text-transform: uppercase;
+                }
+            }
+
+            .intro__stars {
+                margin: 30px 0;
+                display: flex;
+
+                .intro__star {
+                    font-size: 40px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #FFE897;
+                    }
+                }
+            }
+
+            .intro__desc {
+                p {
+
+                    font-size: 19px;
+                    margin: 20px 0;
+                }
+            }
+
+            .intro__property {
+                display: flex;
+                justify-content: space-between;
+                width: 200px;
+            }
+
+            .intro__choice {
+                margin: 30px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 400px;
+
+                .counter {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 130px;
+                    background-color: #C4C4C4;
+                    padding: 12px 25px;
+                    border-radius: 44px;
+                    font-size: 27px;
+
+                    button {
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .intro__btn {
+                    .buy {
+                        text-decoration: none;
+                        background-color: @accent;
+                        padding: 12px 40px;
+                        color: @white ;
+                        border-radius: 44px;
+                        font-size: 25px;
+                        font-family: "GothamProBold";
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .accordion {
+                border: 2px solid @accent ;
+                border-radius: 44px;
+                color: @black;
+                cursor: pointer;
+                padding: 18px;
+                background: none;
+                width: 100%;
+                text-align: left;
+                position: relative;
+                outline: none;
+                transition: 0.4s;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+
+            .acc__arrow {
+                position: absolute;
+                right: 19px;
+                top: 9px;
+                color: @accent;
+                font-size: 30px;
+                font-weight: 900;
+            }
+
+            .panel {
+                position: relative;
+                margin-bottom: 30px;
+                background-color: white;
+                display: none;
+                border: 2px solid @accent ;
+                padding: 30px 15px;
+                border-radius: 20px;
+                color: #464646;
+
+                p {
+                    margin-bottom: 10px;
+
+                    line-height: 24px;
+                }
+
+            }
+
+            .panel.show {
+                display: block;
+            }
+        }
+    }
+
+    .production {
+        margin: 60px 0;
+
+        .production__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1000px;
+            margin: 0 auto;
+
+
+            .production__start {
+                width: 450px;
+
+                h2 {
+                    margin-bottom: 30px;
+                    font-family: "GothamProBlack";
+                    text-transform: uppercase;
+                    font-size: 20px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+
+                }
+            }
+        }
+    }
+
+    .slider {
+        background-color: #464646;
+
+        .slider__inner {
+            background: transparent;
+            color: @white;
+
+            .slider__right {
+                width: 700px;
+
+                h3,
+                h4,
+                p,
+                .anonim {
+                    color: @white;
+
+                    hr {
+                        background: @white;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

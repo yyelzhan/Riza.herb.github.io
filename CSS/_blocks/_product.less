@@ -1,0 +1,140 @@
+// main: ..//style.less
+.product {
+    padding: 90px 0;
+
+    .tabs {
+        display: flex;
+
+
+        .tabs_header {}
+
+        .tabs_choice {
+            width: 400px;
+            li{
+                font-size: 14px;
+                line-height: 17px;
+                color: #2B2B2B;
+            }
+
+            .tab_btn {
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+
+                input {
+                    margin-right: 5px;
+                }
+            }
+
+        }
+        .accordion {
+            border: none ;
+            color: @black;
+            cursor: pointer;
+            padding: 18px;
+            background: none;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            outline: none;
+            transition: 0.4s;
+            text-transform: uppercase;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            color: #75B051
+
+        }
+
+        .acc__arrow {
+            position: absolute;
+            right: 19px;
+            top: 9px;
+            color: @accent;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .panel {
+            position: relative;
+            margin-bottom: 10px;
+            background-color: white;
+            display: none;
+            padding: 0 15px;
+            border-radius: 20px;
+            color: #464646;
+            p {
+                margin-bottom: 10px;
+                line-height: 24px;
+            }
+        }
+
+        .panel.show {
+            display: block;
+        }
+    
+
+
+        .tab_choice_active:active {
+            color: red;
+        }
+
+        .tabs_content {
+            display: none;
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+
+            .tabs_wrapper {
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: baseline;
+
+                .tabs_item {
+                    width: 250px;
+
+                    h3 {
+                        margin-top: 44px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        font-family: "GothamProBold";
+                    }
+
+                    p {
+                        margin-top: 14px;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #607874;
+                    }
+
+                    .btn_b2 {
+                        margin-top: 25px;
+                        font-family: "GothamProBold";
+                        width: 139px;
+                        height: 35px;
+                        background: #75B051;
+                        border-radius: 16px;
+                        box-shadow: none;
+                        color: #FFFFFF;
+                        border: 0;
+                    }
+
+                }
+            }
+
+            .tab_mt {
+                margin-top: 50px;
+            }
+
+         
+        }
+
+
+    }
+
+    .tabs_content.active {
+        display: block;
+    }
+
+}

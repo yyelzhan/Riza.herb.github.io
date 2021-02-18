@@ -1,0 +1,105 @@
+//main:..//style.less
+.b4 {
+    padding: 90px 0;
+    background: #464646;
+
+    .tabs {
+        display: block;
+        margin: 0 auto;
+        width: 932px;
+        min-height: 334px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 44px;
+
+        .tabs_header {
+            font-family: "GothamProMedium";
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #464646;
+        }
+
+        .tabs_choice {
+            font-family: "GothamProMedium";
+            margin-top: 50px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            padding-left: 0;
+
+            .tab_choice {
+                width: 100%;
+                height: 55px;
+                border: 1px solid #464646;
+                font-weight: 500;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #464646;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+
+                
+            }
+
+            .tab_choice .active {
+                background-color: brown;
+            }
+
+        }
+
+        .tab_choice_active:active {
+            color: red;
+        }
+
+        .tab_choice:hover {
+            box-shadow: 3px 3px 20px #464646;
+        }
+
+
+
+        .tabs_content {
+            display: none;
+            margin: 0 auto;
+            width: 800px;
+
+
+            .tabs_wrapper {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                height: 120px;
+                margin-bottom: 20px;
+                .tabs_item {
+                    text-align: center;
+
+                    p {
+                        margin-top: 19px;
+                        font-size: 12px;
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        color: #464646;
+                    }
+                }
+            }
+            .tabs_wrapper.health{
+                justify-content: space-evenly;
+            }
+        }
+
+
+    }
+
+    .tabs_content.active {
+        display: block;
+    }
+
+}
