@@ -42,6 +42,19 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
+var radio = document.querySelectorAll('[type="radio"]');
+ 
+function get(){
+    var arr = [], obj = {};
+    decodeURI(location.search.substr(1).split('&')).split(',').forEach((e,i)=>{
+        arr[i] = e.split('='), obj[arr[i][0]] = arr[i][1]; });
+    return obj;
+}
+ 
+if(get().country == 'Russia') radio[0].checked = true;
+if(get().city == 'Moscow') radio[1].checked = true;
+if(get().name == 'Vasya') radio[2].checked = true;
+
 
 // const anchors = document.querySelectorAll('.nav__link')
 
